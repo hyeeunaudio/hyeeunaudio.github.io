@@ -21,28 +21,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. pnpm 설치 (가장 먼저 실행)
+      # 1. Install pnpm first.
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9
 
-      # 2. Node.js 설정 (cache를 pnpm으로 지정)
+      # 2. Set up Node.js with pnpm cache.
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "pnpm"
 
-      # 3. 의존성 설치
+      # 3. Install dependencies.
       - name: Install dependencies
         run: pnpm install
 
-      # 4. 빌드 실행
+      # 4. Build the static site.
       - name: Build with Next.js
         run: pnpm run build
 
-      # 5. 빌드 결과물 업로드
+      # 5. Upload the build output.
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

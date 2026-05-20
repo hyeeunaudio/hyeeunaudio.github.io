@@ -2,8 +2,8 @@ import ResumePage from "@/feat/resume/page/resume-page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resume | Maeve",
-  description: "Experience and education of Maeve",
+  title: "Resume | Gracie",
+  description: "Experience and education of Gracie",
 };
 
 /**

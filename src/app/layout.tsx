@@ -16,8 +16,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Maeve",
-  description: "Maeve - Portfolio",
+  title: "Gracie",
+  description: "Gracie - Portfolio",
 };
 
 export default function RootLayout({
