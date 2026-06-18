@@ -16,7 +16,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Gracie",
+  title: "Maeve",
   description: "Gracie - Portfolio",
 };
 
